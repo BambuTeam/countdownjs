@@ -1,0 +1,18 @@
+body{
+    background: url("https://images.pexels.com/photos/689451/pexels-photo-689451.jpeg"), $bg_dark;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logosvg img{
+    max-width: 50%;
+    float: right;
+    
+
+}
+
+.txt-nav p{
+    color: #fff;
+    justify-content: start !important;
+    margin-top: 50px;
+}

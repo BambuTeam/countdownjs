@@ -1,16 +1,26 @@
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap';
+import LogoSvg from "../img/logovertikality.svg"
+import { Col, Container, Row } from 'react-bootstrap';
+
 
 
 
 const Navbar=()=>(
-  <div className="footer">
+  
   <Container>
   <Row>
-    <Col>1 of 1</Col>
+    <Col className="logosvg col-6">
+    <br />
+    <img src ={LogoSvg} alt="Logo Vertikality"/>
+    </Col>
+    <Col className="txt-nav">
+    <br />
+      <p>The most exclusive Training Camps & Race <br /> Series events in the region, alongside some of <br /> the world top athletes.</p>
+    </Col>
   </Row>
-</Container>
-</div>
+  </Container>
+
+
 )
 
 export default Navbar;
