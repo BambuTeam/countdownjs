@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  './assets/scss/style.scss';
 
+<script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+
 
 ReactDOM.render(
   <React.StrictMode>

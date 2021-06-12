@@ -4,8 +4,6 @@ import Runners from "../img/runners.png"
 import TextRu from "../img/txt-exp"
 
 
-
-
 const Header=()=>(
   
   <Container>
@@ -19,7 +17,11 @@ const Header=()=>(
     
     
   </Row>
+  <div id="clock"></div>
+
+
   </Container>
+  
 
 
 )
