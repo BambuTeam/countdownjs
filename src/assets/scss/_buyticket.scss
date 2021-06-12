@@ -25,4 +25,15 @@
     text-align: center;
     display:block;
     margin:auto;
+
+    &:hover {
+    animation: mymove 5s infinite;
+    letter-spacing: 5px;
+    }
+
 }
+
+@keyframes mymove {
+    from {background-color: rgb(126, 1, 1);}
+    to {background-color: rgb(15, 15, 15);}
+  }

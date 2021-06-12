@@ -4,12 +4,16 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 
 
+
 const Buyticket=()=>(
   
   <Container className="Buytickets">
       <Row>
       <Col>
+      
+      <a href="https://www.google.com/" target="_blank">
       <button>BUY TICKET</button>
+      </a>
       </Col>
       </Row>
       <Row>
