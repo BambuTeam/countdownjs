@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Font-Bold;
+    src: url(../fonts/BebasNeueBold.ttf);
+    }
+
 .Runners img{
     
 display:block;
@@ -8,7 +13,16 @@ margin:auto;
 
 .TextRu{
     z-index: 99999999999;
-    margin-top: -210px !important;
+    margin-top: -260px !important;
     display:block;
     margin:auto;
+}
+
+.txt-runner{
+    font-family: Font-Bold ;
+    font-style: italic;
+    color: #fefefe;
+    text-align: center;
+    font-size: 35px;
+    line-height : 35px;
 }
