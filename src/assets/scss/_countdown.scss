@@ -1,9 +1,26 @@
 .countdown{
+    background-color: #000;
     display:flex;
     align-items: center;
     justify-content: center;
     section{
-        padding: 20px;
+        padding: 10px;
+        P{
+            color: #fff;
+            font-size: 80px;
+            margin: 0;
+            padding: 0;
+            line-height: .5;
+
+            .clock-text{
+                font-size: 30px;
+            }
+        }
+        
+    }
+    span{
+        color: #fff;
+        font-size: 40px;
     }
 
 }

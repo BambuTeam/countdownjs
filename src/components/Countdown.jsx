@@ -50,26 +50,26 @@ return(
     <div className="countdown">
         <section>
             <p>{timerDays}</p>
-            <p><small>Days</small></p>
+            <p><small className ='clock-text'>Days</small></p>
         </section>
         <span>:</span>
         <section>
             <p>{timerHours}</p>
-            <p><small>Hours</small></p>
+            <p><small className ='clock-text'>Hours</small></p>
         </section>
 
         <span>:</span>
 
         <section>
             <p>{timerMinutes}</p>
-            <p><small>Minutes</small></p>
+            <p><small className ='clock-text'>Minutes</small></p>
         </section>
 
         <span>:</span>
 
         <section>
             <p>{timerSeconds}</p>
-            <p><small>Seconds</small></p>
+            <p><small className ='clock-text'>Seconds</small></p>
         </section>
 
     </div>
