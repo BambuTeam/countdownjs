@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from 'react-bootstrap';
+import Countdown from './Countdown';
 
 
 
@@ -8,7 +9,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 const Buyticket=()=>(
   
   <Container className="Buytickets">
+
       <Row>
+        <div className="col-lg-12 countdown">
+          <Countdown />
+        </div>
       <Col>
       
       <a href="https://www.google.com/" target="_blank">
