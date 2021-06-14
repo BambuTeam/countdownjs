@@ -11,7 +11,7 @@ const Countdown=()=>{
     let interval = useRef()
 
     const startTime =()=>{
-        const contdownDate = new Date('Jun 27, 2021 00:00:00').getTime()
+        const contdownDate = new Date('Aug 28, 2021 00:00:00').getTime()
 
         interval = setInterval(()=>{
             const now = new Date().getTime()

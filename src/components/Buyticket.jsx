@@ -7,7 +7,8 @@ import Countdown from './Countdown';
 
 
 const Buyticket=()=>(
-  
+
+  <div className="bg-dark-1">
   <Container className="Buytickets">
 
       <Row>
@@ -15,7 +16,8 @@ const Buyticket=()=>(
           <Countdown />
         </div>
       <Col>
-      
+  
+      <br />
       <a href="https://www.google.com/" target="_blank">
       <button>BUY TICKET</button>
       </a>
@@ -27,6 +29,7 @@ const Buyticket=()=>(
           </Col>
       </Row>
   </Container>
+  </div>
 
 
 )
