@@ -1,4 +1,5 @@
 import React from "react";
+import HotelContent from "../components/HotelContent";
 import Location from "../components/location";
 import Buyticket from "../components/Buyticket";
 import Header from "../components/Header";
