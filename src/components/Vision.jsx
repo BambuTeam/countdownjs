@@ -9,6 +9,7 @@ const Vision = () => {
         <div className="bg-dark-1 ">
             <Container className="vision-bg">
                 <Row >
+                    <div className="line"></div>
                     <Col className="col-5">
 
                         <h1>OUR <br /> VISION</h1>
