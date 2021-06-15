@@ -5,19 +5,19 @@ import Buyticket from "../components/Buyticket";
 import Header from "../components/Header";
 import Navbar from '../components/Navbar';
 import Meals from '../components/Meals';
-
+import Vision from '../components/Vision';
 
 
 
 const Layout = () => {
     return (<div>
-   
-    < Navbar />
-    < Header />
-    < Buyticket />
-    < Location />
-    <Meals/>
-        
+
+        < Navbar />
+        < Header />
+        < Buyticket />
+        < Location />
+        <Meals />
+        <Vision />
 
     </div>)
 }
