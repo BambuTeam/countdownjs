@@ -83,3 +83,19 @@
 
 }
 
+.sponsor-bg{
+    .line{
+        border-top: solid 5px #fefefe;
+        height: 5px;
+        z-index: 999999;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    img{
+        
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}

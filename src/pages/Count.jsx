@@ -8,6 +8,8 @@ import Meals from '../components/Meals';
 import Vision from '../components/Vision';
 import Athlet1 from "../components/Athlet1";
 import Athlet2 from "../components/Athlet2";
+import Sponsor from "../components/Sponsor";
+
 
 const Layout = () => {
     return (<div>
@@ -20,6 +22,7 @@ const Layout = () => {
         <Vision />
         <Athlet1 />
         <Athlet2 />
+        <Sponsor />
     </div>)
 }
 
