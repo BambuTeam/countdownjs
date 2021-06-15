@@ -9,12 +9,12 @@ const Vision = () => {
         <div className="bg-dark-1 ">
             <Container className="vision-bg">
                 <Row >
+                    <div className="line"></div>
                     <Col className="col-5">
 
                         <h1>OUR <br /> VISION</h1>
                     </Col>
                     <Col className="col-7">
-
                         <p>Training Camps Lead by World Elite Athletes in iconic Locations</p>
                         <p>Training Camps Presented as a 3-day-weekend event, Athletes will be
                             able to take part of some of the most exclusive training camps in the
