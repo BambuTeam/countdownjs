@@ -1,4 +1,5 @@
 import React from "react";
+import Location from "../components/HotelContent";
 import Location from "../components/location";
 import Buyticket from "../components/Buyticket";
 import Header from "../components/Header";
@@ -15,6 +16,7 @@ const Layout = () => {
     < Header />
     < Buyticket />
     < Location />
+    < HotelContent />
     
         
 
