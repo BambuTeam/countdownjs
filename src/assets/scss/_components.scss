@@ -1,0 +1,51 @@
+
+.meals-bg{
+    p{
+        
+        color: #fff;
+        font-size: 24px;
+    }
+    h2{
+        margin-top: 40px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    h3{
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    img{
+        margin-left: -15px;
+        float: left;}
+    button{
+            letter-spacing: 3px;
+            font-size: 25px;
+            background-color: #030303;
+            color: #fefefe;
+            font-family: Font-Bold ;
+            font-style: italic;
+            text-align: right;
+            display:block;
+            position: absolute; right: 0;
+    }
+}
+
+.vision-bg{
+    p{
+        margin-top: 40px;
+        color: #fff;
+        font-size: 28px;
+    }
+    h1{
+        margin-left: 40px;
+        margin-top: 40px;
+        color: #fff;
+        font-size: 150px;
+        font-weight: 700;
+        font-family: Font-Bold;
+        src: url(../fonts/BebasNeueBold.ttf);
+    }
+   
+}

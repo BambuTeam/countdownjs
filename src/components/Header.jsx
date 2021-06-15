@@ -7,6 +7,11 @@ import TextRu from "../img/txt-exp"
 const Header=()=>(
   
   <Container>
+    <Row>
+      <br />
+    <p className="col-12 txt-runner">The most exclusive Training Camps & Race <br /> Series events in the region, alongside some of <br /> the world top athletes.</p>
+    </Row>
+    
   <Row>
     <Col className="Runners col-12 " >
     <img src ={Runners} alt="Logo Vertikality"/>
