@@ -1,20 +1,19 @@
 import React from "react";
 import { Col, Container, Row } from 'react-bootstrap';
-import LogoCayetano from "../img/logocayetano.svg"
 import Hotel from "../img/hotel.png"
 
 
 
-const Location=()=>(
+const HotelContent=()=>(
 
   <div className="bg-dark-1 ">
-  <Container className="location-bg">
+  <Container>
     
       <Row >
-          <Col className="col-4">
-          <img src ={LogoCayetano} alt="Logo Vertikality"/>
+          <Col >
+          <img src ={Hotel} alt="Hotel"/>
           </Col>
-          <Col className="col-8">
+          <Col >
           <p>LOCATION: Finca San Cayetano<br />
                 Km. 89.5 Ruta Nacional 14, San Juan Alotenango.</p>
                 
@@ -27,4 +26,4 @@ const Location=()=>(
 
 )
 
-export default Location;
+export default HotelContent;
