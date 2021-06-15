@@ -53,5 +53,31 @@
         font-family: Font-Bold;
         src: url(../fonts/BebasNeueBold.ttf);
     }
-   
+}
+
+.athlet-bg{
+    p{
+        
+        color: #fff;
+        font-size: 17px;
+        font-weight: 200;
+    }
+    h2{
+        transform: skew(-15deg);
+        margin-top: 40px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    h3{
+        transform: skew(-15deg);
+        color: red;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    img{
+        margin-left: -15px;
+        float: left;
+    }
+
 }

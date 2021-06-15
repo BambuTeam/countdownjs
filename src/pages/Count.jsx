@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Navbar from '../components/Navbar';
 import Meals from '../components/Meals';
 import Vision from '../components/Vision';
-
+import Athlet1 from "../components/Athlet1";
 
 
 const Layout = () => {
@@ -17,7 +17,7 @@ const Layout = () => {
         < Location />
         <Meals />
         <Vision />
-
+        <Athlet1 />
     </div>)
 }
 
