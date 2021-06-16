@@ -1,12 +1,41 @@
-@media (min-width: 576px) { 
+@media only screen and (max-width: 600px) { 
 
     .Runners img{
     
         display:block;
         margin:auto;
-        max-width: 20%;
+        max-width:100%;
             
            
         }
 
+
+        .TextRu {
+            z-index: 99999999999;
+            margin-top: -260px !important;
+            display: block;
+            margin: auto;
+            max-width: 20%;
+        }
+
+        .meals-bg img {
+            margin-left: -15px;
+            float: left;
+            max-width: 100vw;
+        }
+
+        .location-bg p {
+            padding: 15px;
+            color: #fefefe;
+            font-size: 15px !important;
+
  }
+
+ .location-bg img {
+    margin-top: 0px !important; 
+    float: right;
+    max-width: 100% !important;
+}
+
+
+}
