@@ -9,7 +9,7 @@ import Vision from '../components/Vision';
 import Athlet1 from "../components/Athlet1";
 import Athlet2 from "../components/Athlet2";
 import Sponsor from "../components/Sponsor";
-
+import Buyticket2 from "../components/Buyticket2";
 
 const Layout = () => {
     return (<div>
@@ -23,6 +23,7 @@ const Layout = () => {
         <Athlet1 />
         <Athlet2 />
         <Sponsor />
+        <Buyticket2/>
     </div>)
 }
 

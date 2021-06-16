@@ -99,3 +99,43 @@
         margin: auto;
     }
 }
+
+.Buytickets2{
+    button{
+    letter-spacing: 3px;
+    transform: skew(-10deg);
+    font-size: 35px;
+    background-color: red;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    display:block;
+
+    &:hover {
+    animation: mymove 5s infinite;
+    letter-spacing: 5px;
+    }
+   
+
+    }
+    .line{
+        border-top: solid 5px #fefefe;
+        height: 5px;
+        z-index: 999999;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    img{
+        margin-top: 30px;    
+        width: 100%;
+        display: block;
+    }
+    h1{
+        transform: skew(-15deg);
+        margin-top: 40px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
