@@ -140,3 +140,70 @@
         font-weight: 700;
     }
 }
+
+.Contact{
+    button{
+    letter-spacing: 3px;
+    transform: skew(-10deg);
+    font-size: 35px;
+    background-color: red;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    display:block;
+
+    &:hover {
+    animation: mymove 5s infinite;
+    letter-spacing: 5px;
+    }
+   
+
+    }
+    .line{
+        border-top: solid 5px #fefefe;
+        height: 5px;
+        z-index: 999999;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    img{
+        margin-top: 30px;    
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;  
+    }
+    h2{
+        transform: skew(-10deg);
+        margin-top: 20px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        font-family: Font-Bold ;
+        font-style: italic;
+    }
+    p{
+        font-family: Font-Bold ;
+        font-style: italic;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    input{
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    }
+    textarea{
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    }
+}

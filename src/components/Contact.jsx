@@ -30,17 +30,14 @@ const Contact = () => {
     return (
 
         <div className="bg-dark-1 ">
-            <Container className="Buytickets2">
+            <Container className="Contact">
                 <Row >
                     <div className="line"></div>
                     <Col className="col-3">
                     </Col>
                     <Col className="col-6">
                         <h2>
-                            <strong className="font-primary"> Contacto </strong>
-                            <p className="font-txt">
-                                ¡TRABAJEMOS JUNTOS! <br></br>CONTÁCTANOS{" "}
-                            </p>
+                            CONTACT
                         </h2>
                         <form
                             id="contactForm"
@@ -49,7 +46,7 @@ const Contact = () => {
 
                         >
                             <p>
-                                <label> Name * </label>
+                                <label> Name *      </label>
                                 <input
                                     name="name"
                                     type="text"
@@ -58,7 +55,7 @@ const Contact = () => {
                                 />
                             </p>
                             <p>
-                                <label> Email * </label>{" "}
+                                <label> Email *      </label>{" "}
                                 <input
                                     name="email"
                                     type="email"
@@ -67,7 +64,7 @@ const Contact = () => {
                                 />
                             </p>{" "}
                             <p>
-                                <label> Messages * </label>{" "}
+                                <label> Messages *      </label>{" "}
                                 <textarea
                                     name="message"
                                     id="message"
@@ -89,7 +86,7 @@ const Contact = () => {
 
                 <br />
             </Container>
-        </div>
+        </div >
     );
 }
 export default Contact;
