@@ -33,10 +33,16 @@
 }
 
 .vision-bg{
+    .line{
+        border-top: solid 5px red;
+        height: 5px;
+        z-index: 999999;
+        width: 100%;
+    }
     p{
         margin-top: 40px;
         color: #fff;
-        font-size: 28px;
+        font-size: 24px;
     }
     h1{
         margin-left: 40px;
@@ -47,5 +53,90 @@
         font-family: Font-Bold;
         src: url(../fonts/BebasNeueBold.ttf);
     }
+}
+
+.athlet-bg{
+    
+    p{
+        
+        color: #fff;
+        font-size: 17px;
+        font-weight: 200;
+    }
+    h2{
+        transform: skew(-15deg);
+        margin-top: 20px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    h3{
+        transform: skew(-15deg);
+        color: red;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    img{
+        margin-left: -15px;
+        float: left;
+    }
+
+}
+
+.sponsor-bg{
+    .line{
+        border-top: solid 5px #fefefe;
+        height: 5px;
+        z-index: 999999;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    img{
+        
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.Buytickets2{
+    button{
+    letter-spacing: 3px;
+    transform: skew(-10deg);
+    font-size: 35px;
+    background-color: red;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    display:block;
+
+    &:hover {
+    animation: mymove 5s infinite;
+    letter-spacing: 5px;
+    }
    
+
+    }
+    .line{
+        border-top: solid 5px #fefefe;
+        height: 5px;
+        z-index: 999999;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    img{
+        margin-top: 30px;    
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;  
+    }
+    h1{
+        transform: skew(-15deg);
+        margin-top: 40px;
+        color: gray;
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
