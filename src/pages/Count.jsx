@@ -1,5 +1,4 @@
 import React from "react";
-import HotelContent from "../components/HotelContent";
 import Location from "../components/location";
 import Buyticket from "../components/Buyticket";
 import Header from "../components/Header";
@@ -10,6 +9,7 @@ import Athlet1 from "../components/Athlet1";
 import Athlet2 from "../components/Athlet2";
 import Sponsor from "../components/Sponsor";
 import Buyticket2 from "../components/Buyticket2";
+import Contact from "../components/Contact";
 
 const Layout = () => {
     return (<div>
@@ -23,7 +23,8 @@ const Layout = () => {
         <Athlet1 />
         <Athlet2 />
         <Sponsor />
-        <Buyticket2/>
+        <Buyticket2 />
+        <Contact />
     </div>)
 }
 
