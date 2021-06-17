@@ -11,6 +11,7 @@ import Sponsor from "../components/Sponsor";
 import Buyticket2 from "../components/Buyticket2";
 import Contact from "../components/Contact";
 
+
 const Layout = () => {
     return (<div>
 

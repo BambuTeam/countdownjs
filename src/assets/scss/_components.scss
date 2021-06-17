@@ -191,19 +191,38 @@
         font-weight: 700;
     }
     input{
-    letter-spacing: 3px;
-    font-size: 30px;
-    color: red;
-    font-family: Font-Bold ;
-    font-style: italic;
-    text-align: center;
-    }
-    textarea{
+    margin-left: 30px;
     letter-spacing: 3px;
     font-size: 20px;
-    color: red;
+    color: black;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    width: 70%;
+    }
+    textarea{
+    width: 70%;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: black;
     font-family: Font-Bold ;
     font-style: italic;
     text-align: center;
     }
+}
+
+.Terminos{
+    
+    p{
+        font-family: Font-Bold ;
+        font-style: italic;
+        color: #fff;
+        font-size: 16px;
+        text-align: justify;
+    }
+    input{
+    margin-left: 30px;
+    letter-spacing: 3px;
+    }
+   
 }

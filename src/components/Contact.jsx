@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
 
+
 const Contact = () => {
 
     function sendEmail(e) {
@@ -46,7 +47,7 @@ const Contact = () => {
 
                         >
                             <p>
-                                <label> Name *      </label>
+                                <label> Name  *</label>
                                 <input
                                     name="name"
                                     type="text"
@@ -55,7 +56,7 @@ const Contact = () => {
                                 />
                             </p>
                             <p>
-                                <label> Email *      </label>{" "}
+                                <label> Email*</label>{" "}
                                 <input
                                     name="email"
                                     type="email"
@@ -68,10 +69,15 @@ const Contact = () => {
                                 <textarea
                                     name="message"
                                     id="message"
-                                    cols="30"
+                                    cols="10"
                                     rows="10"
                                     placeholder="Messages"
                                 ></textarea>{" "}
+                            </p>
+                            <p>
+                                <a href="/services">
+                                    <label> Acepto Terminos & Condiciones </label>{" "}</a>
+                                <input type="checkbox" />
 
                                 <button onClick={() => mostrarAlert()}>
                                     ENVIAR{" "}
