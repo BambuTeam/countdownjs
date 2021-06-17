@@ -5,8 +5,9 @@ import Runners from "../img/runners/csarmiento.png"
 
 const Athlet1 = () => {
     return (
-
+        
         <div className="bg-dark-1 ">
+        <br />
             <Container className="athlet-bg">
                 <Row >
 
@@ -14,7 +15,7 @@ const Athlet1 = () => {
 
                         <img src={Runners} alt="csarmiento" />
                     </Col>
-                    <Col className="col-8">
+                    <Col className="col-8 cont-text_athlet">
                         <h2>FOUNDER VERTIKALITY</h2>
                         <h3>CHARLIE SARMIENTO</h3>
                         <p>Founder & Business Strategy Director</p>
