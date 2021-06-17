@@ -9,7 +9,7 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_9w8b5b8', 'template_sxqpx16', e.target, 'user_5bDIgYddipK9ipPSncbgw')
+        emailjs.sendForm('service_avpb7ep', 'template_gfabn9n', e.target, 'user_ZDplgb2PRFXpCCvaMxDv9')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -21,7 +21,7 @@ const Contact = () => {
 
         swal({
             title: "Gracias por realizar tu contancto",
-            text: "Pronto se estaran comunicando contigo, somos Bsc-Media",
+            text: "Pronto se estaran comunicando contigo, somos Vertikality",
             icon: "success",
             timer: 4000
         });
