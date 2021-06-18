@@ -200,6 +200,10 @@
     text-align: center;
     width: 70%;
     }
+    .checkbox{
+        margin-left: 0px;
+        width: 20%;
+    }
     textarea{
     width: 70%;
     letter-spacing: 3px;
@@ -214,15 +218,27 @@
 .Terminos{
     
     p{
+        margin-top: 150px;
         font-family: Font-Bold ;
         font-style: italic;
         color: #fff;
         font-size: 16px;
         text-align: justify;
     }
-    input{
-    margin-left: 30px;
+    button{
     letter-spacing: 3px;
+    transform: skew(-10deg);
+    font-size: 35px;
+    background-color: red;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    display:block;
+
+    &:hover {
+    animation: mymove 5s infinite;
+    letter-spacing: 5px;
     }
-   
+    }
 }

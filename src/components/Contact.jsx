@@ -49,6 +49,7 @@ const Contact = () => {
                             <p>
                                 <label> Name  *</label>
                                 <input
+                                    required="required"
                                     name="name"
                                     type="text"
                                     id="name"
@@ -58,6 +59,7 @@ const Contact = () => {
                             <p>
                                 <label> Email*</label>{" "}
                                 <input
+                                    required="required"
                                     name="email"
                                     type="email"
                                     id="email"
@@ -67,6 +69,7 @@ const Contact = () => {
                             <p>
                                 <label> Messages *      </label>{" "}
                                 <textarea
+                                    required="required"
                                     name="message"
                                     id="message"
                                     cols="10"
@@ -76,9 +79,10 @@ const Contact = () => {
                             </p>
                             <p>
                                 <a href="/services">
-                                    <label> Acepto Terminos & Condiciones </label>{" "}</a>
-                                <input type="checkbox" />
-
+                                    <input className="checkbox" required="required" type="checkbox" />
+                                    <label> Acepto Terminos & Condiciones </label></a>
+                            </p>
+                            <p>
                                 <button onClick={() => mostrarAlert()}>
                                     ENVIAR{" "}
                                 </button>
