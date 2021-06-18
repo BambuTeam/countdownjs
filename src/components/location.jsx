@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import LogoCayetano from "../img/logocayetano.svg"
-import Hotel from "../img/hotel.png"
+
 
 
 
