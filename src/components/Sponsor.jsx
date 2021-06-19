@@ -6,7 +6,7 @@ import sponsor3 from "../img/sponsor/Ford.svg"
 import sponsor4 from "../img/sponsor/inguat.svg"
 import sponsor5 from "../img/sponsor/hyperice.svg"
 
-import sponsor7 from "../img/sponsor/Normatec.svg"
+import sponsor7 from "../img/sponsor/normatec.svg"
 import sponsor8 from "../img/sponsor/coros.svg"
 import sponsor9 from "../img/sponsor/060.svg"
 import sponsor10 from "../img/sponsor/oceana.svg"
