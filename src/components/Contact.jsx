@@ -16,7 +16,8 @@ const Contact = () => {
     const [dataform, setDataform] = useState(false)
 
     useEffect(()=>{
-        const isValid = true
+        const isValid = false 
+        
         setDataform(isValid)
     },[participant])
     
@@ -80,6 +81,7 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     placeholder="Nombre Completo*"
+                                    onChange={handleInputChange}
                                 />
                             </p>
                             <p>
@@ -90,6 +92,8 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     placeholder="contacto@dominio.com*"
+                                    onChange={handleInputChange}
+
                                 />
                             </p>{" "}
                             <p>
@@ -101,6 +105,8 @@ const Contact = () => {
                                     cols="10"
                                     rows="10"
                                     placeholder="Messages"
+                                    onChange={handleInputChange}
+
                                 ></textarea>{" "}
                             </p>
                             <p>
