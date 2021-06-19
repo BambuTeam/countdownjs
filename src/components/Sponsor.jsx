@@ -11,7 +11,7 @@ import sponsor8 from "../img/sponsor/coros.svg"
 import sponsor9 from "../img/sponsor/060.svg"
 import sponsor10 from "../img/sponsor/oceana.svg"
 import sponsor11 from "../img/sponsor/bambu.svg"
-import sponsor12 from "../img/sponsor/bambu.svg"
+
 
 
 const Sponsor = () => {
