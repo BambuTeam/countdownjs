@@ -15,6 +15,8 @@ import sponsor11 from "../img/sponsor/bambu.svg"
 
 
 const Sponsor = () => {
+
+    
     return (
 
         <div className="bg-dark-1 ">

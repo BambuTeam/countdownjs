@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
@@ -6,6 +6,33 @@ import { Link } from "react-router-dom";
 
 
 const Contact = () => {
+    const [participant, setParticipant] = useState({
+        nombre: '',
+        correo:'',
+        mensaje:''
+    })
+    
+    const [disabled, setDisabled] = useState(true)
+    const [dataform, setDataform] = useState(false)
+
+    useEffect(()=>{
+        const isValid = false 
+        
+        setDataform(isValid)
+    },[participant])
+    
+
+    const handleInputChange = (event) => {
+        // console.log(event.target.name)
+        // console.log(event.target.value)
+        setParticipant({
+            ...participant,
+            [event.target.name] : event.target.value
+        })
+    }
+
+    
+
 
     function sendEmail(e) {
         e.preventDefault();
@@ -54,6 +81,7 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     placeholder="Nombre Completo*"
+                                    onChange={handleInputChange}
                                 />
                             </p>
                             <p>
@@ -64,6 +92,8 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     placeholder="contacto@dominio.com*"
+                                    onChange={handleInputChange}
+
                                 />
                             </p>{" "}
                             <p>
@@ -75,15 +105,17 @@ const Contact = () => {
                                     cols="10"
                                     rows="10"
                                     placeholder="Messages"
+                                    onChange={handleInputChange}
+
                                 ></textarea>{" "}
                             </p>
                             <p>
                                 <a href="/services">
-                                    <input className="checkbox" required="required" type="checkbox" />
+                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setDisabled(!disabled)}  />
                                     <label> Acepto Terminos & Condiciones </label></a>
                             </p>
                             <p>
-                                <button onClick={() => mostrarAlert()}>
+                                <button onClick={() => mostrarAlert()} disabled={disabled}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
