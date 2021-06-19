@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 
 const Contact = () => {
+    const [disabled, setDisabled] = useState(true)
+
 
     function sendEmail(e) {
         e.preventDefault();
@@ -79,11 +81,11 @@ const Contact = () => {
                             </p>
                             <p>
                                 <a href="/services">
-                                    <input className="checkbox" required="required" type="checkbox" />
+                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setDisabled(!disabled)}  />
                                     <label> Acepto Terminos & Condiciones </label></a>
                             </p>
                             <p>
-                                <button onClick={() => mostrarAlert()}>
+                                <button onClick={() => mostrarAlert()} disabled={disabled}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
