@@ -15,12 +15,10 @@ const Vision = () => {
                         <h1>OUR <br /> VISION</h1>
                     </Col>
                     <Col className="col-7">
-                        <p>Training Camps Lead by World Elite Athletes in iconic Locations</p>
-                        <p>Training Camps Presented as a 3-day-weekend event, Athletes will be
-                            able to take part of some of the most exclusive training camps in the
-                            country alongside some of the World's Top Athletes, where they will learn
-                            technique, mental, training, nutrition, and some of the secrets Elite Athletes
-                            do to preform at their best.</p>
+                        <p>Create unique and memorable experiences for athletes around the region, while exploring unmatched sightseeing & undiscovered places around the Heart of the Mayan Civilization.</p>
+                        <p>Each race is strategically developed to exceed expectations and be amongst the world’s best races, in different modalities: Obstacle Racing, Relay Racing & Trail Racing</p>
+                        <p>Athletes will also have the opportunity to participate in World Class Training Camps with Top World  Athletes in each Discipline over the course of 3 days.</p><br />
+                        <div class="line"></div>
                     </Col>
                 </Row>
                 <br />

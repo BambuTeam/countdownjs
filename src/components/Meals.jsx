@@ -15,19 +15,23 @@ const Meals =()=>{
                 </Col>
                 <Col className="meals-bg col-6">
                  <h2>Meals</h2>
-                <p>Breakfat and Lunch(Friday, Saturday & Sunday)</p>
+                <p>Breakfast and Lunch included (Friday, Saturday & Sunday)
+                    Dinner available for purchase.
+                    </p>
                      <h3> Welcome Kit</h3>  
-                    <p>T-Shirt Vertikality, Notebook, Propelling pencil,
-                        Cap, Blender Bottle.</p>
+                    <p>Unique T-Shirt Vertikality, Cool Cap, “Train for the Shake” Blender Bottle, Gatorade Hydration bottle  and other surprises..</p>
 
-                    <h3>Master Classes.</h3>
+                    <h3>Master Classes/Trail Runs</h3>
 
-                    <p>Atheletes will be able to take part of some of the
-                    most exclusive training camps in the country 
-                    alongside some of the Wordl's Top Athletes, where
-                    the will lear technique, mental training, and
-                    some of the secrets Elite Athletes do yo perform at 
-                    their best.</p>
+                    <p>You will be able to take part in one of the most exclusive Training Camps in the region, with some of the world’s Top Athletes.</p>
+                    <p>You will have the unique opportunity to participate in four Master Classes given by the Athletes: </p>
+                    <br />
+                    <p>- Nutrition:  Manu Vilaseca
+                    <br />- Mental Strategy, Toughness and Training. Coree </p>
+                    <h3>Woltering </h3>
+                    <p>- Speed work & Training: Michael Wardian <br />
+                        - Gear & Night Running: Rosalia Camargo
+                        </p>
 
                     <a href="https://www.google.com/" target="_blank">
                       <button> More Info</button>
@@ -35,6 +39,8 @@ const Meals =()=>{
                 </Col>
                 </Row>
                 <br/>
+                <br/>
+
             </Container>
         </div>
     )
