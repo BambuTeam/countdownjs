@@ -27,17 +27,20 @@ const Sponsor = () => {
                     <Col className="col-2">
                     </Col>
                     <Col className="col-2">
-                        <a href="https://www.google.com/" target="_blank">
+                        <a href="http://excelautomotriz.com/guatemala/" target="_blank">
                             <img src={sponsor1} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor2} alt="csarmiento" />
+                        <a href="https://www.fordguatemala.com/" target="_blank">
+                            <img src={sponsor2} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor3} alt="csarmiento" />
+                        <a href="https://sancayetano.gt/" target="_blank">
+                            <img src={sponsor3} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor4} alt="csarmiento" />
+                        <a href="https://zerosixty.co/" target="_blank">
+                            <img src={sponsor4} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
                     </Col>
@@ -46,23 +49,28 @@ const Sponsor = () => {
                 {/* SEGUNDA FILA */}
                 <Row >
                     <Col className="col-2">
-                        <a href="https://www.google.com/" target="_blank">
+                        <a href="https://clarosports.claro.com.gt/home/" target="_blank">
                             <img src={sponsor5} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor6} alt="csarmiento" />
+                        <a href="https://www.bite.gt/" target="_blank">
+                            <img src={sponsor6} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor7} alt="csarmiento" />
+                        <a href="https://inguat.gob.gt/" target="_blank">
+                            <img src={sponsor7} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor8} alt="csarmiento" />
+                        <a href="https://www.instagram.com/gatoradegt/?hl=es" target="_blank">
+                            <img src={sponsor8} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor9} alt="csarmiento" />
+                        <a href="https://oceana.com.gt/" target="_blank">
+                            <img src={sponsor9} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
-                        <img src={sponsor10} alt="csarmiento" />
+                        <a href="https://www.instagram.com/bambu.team/" target="_blank">
+                            <img src={sponsor10} alt="csarmiento" /></a>
                     </Col>
                 </Row>
                 <br />
