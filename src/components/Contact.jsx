@@ -27,7 +27,7 @@ const Contact = () => {
     },[participant])
     
 
-    const handleInputChange = (event) => {
+    const handleChange = (event) => {
         //este se asegura de ver los cambios de los campos y asignar los valores 
         //se pueden agregar validaciones por aqui cambios
         const [name, value] = event.target
@@ -85,7 +85,7 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     placeholder="Nombre Completo*"
-                                    onChange={handleInputChange}
+                                    onChange={handleChange}
                                     value = {participant.name}
                                 />
                             </p>
@@ -97,7 +97,7 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     placeholder="contacto@dominio.com*"
-                                    onChange={handleInputChange}
+                                    onChange={handleChange}
                                     event={participant.email}
 
                                 />
@@ -111,7 +111,7 @@ const Contact = () => {
                                     cols="10"
                                     rows="10"
                                     placeholder="Messages"
-                                    onChange={handleInputChange}
+                                    onChange={handleChange}
                                     value = {participant.message}
 
                                 ></textarea>{" "}
