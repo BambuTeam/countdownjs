@@ -5,35 +5,33 @@ import swal from 'sweetalert';
 import { Link } from "react-router-dom";
 
 const INITIAL_STATE = {
-    nombre: "",
-    correo:"",
-    mensaje:""
+    name: "",
+    email:"",
+    message:""
 }
 
 
 const Contact = () => {
     const [participant, setParticipant] = useState(INITIAL_STATE)
     const [disabled, setDisabled] = useState(true)
-    const [dataform, setDataform] = useState(false)
+    
+    
 
-    const handlesubmit = ()=>{
-
-    }
 
     useEffect(()=>{
-        const isValid = false 
-        
-        setDataform(isValid)
+        /// este use efect se asegura que los datos del participante no esten en blanco 
+        const isParticipant  = Object.values(participant).every(el=>Boolean(el))
+        isParticipant ? setDisabled(false):setDisabled(true);
+
+
     },[participant])
     
 
     const handleInputChange = (event) => {
-        // console.log(event.target.name)
-        // console.log(event.target.value)
-        setParticipant({
-            ...participant,
-            [event.target.name] : event.target.value
-        })
+        //este se asegura de ver los cambios de los campos y asignar los valores 
+        //se pueden agregar validaciones por aqui cambios
+        const [name, value] = event.target
+        setParticipant((prevState)=>({...prevState, [name]: value}))// se maneja el cambio de la variable dentro del set 
     }
 
     
@@ -49,6 +47,7 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset();
+        setParticipant=INITIAL_STATE
     }
     const mostrarAlert = () => {
 
