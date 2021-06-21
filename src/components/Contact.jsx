@@ -4,16 +4,17 @@ import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
 
-const INITIAL_STATE = {
-    name: "",
-    email:"",
-    message:""
-}
+
 
 
 const Contact = () => {
-    const [participant, setParticipant] = useState(INITIAL_STATE)
+    const [participant, setParticipant] = useState({
+        fullName:"",
+        email:"",
+        message:""
+    })
     const [disabled, setDisabled] = useState(true)
+    const [acepted, setAcepted] = useState(true)
     
     
 
@@ -22,15 +23,14 @@ const Contact = () => {
         /// este use efect se asegura que los datos del participante no esten en blanco 
         const isParticipant  = Object.values(participant).every(el=>Boolean(el))
         isParticipant ? setDisabled(false):setDisabled(true);
-
-
     },[participant])
     
 
-    const handleInputChange = (event) => {
+    function handleChange(event){
         //este se asegura de ver los cambios de los campos y asignar los valores 
         //se pueden agregar validaciones por aqui cambios
-        const [name, value] = event.target
+        const {name, value} = event.target;
+
         setParticipant((prevState)=>({...prevState, [name]: value}))// se maneja el cambio de la variable dentro del set 
     }
 
@@ -47,7 +47,6 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset();
-        setParticipant=INITIAL_STATE
     }
     const mostrarAlert = () => {
 
@@ -81,12 +80,12 @@ const Contact = () => {
                                 <label> Name  *</label>
                                 <input
                                     required="required"
-                                    name="name"
+                                    name="fullName"
                                     type="text"
-                                    id="name"
+                                    id="fullName"
                                     placeholder="Nombre Completo*"
-                                    onChange={handleInputChange}
-                                    value = {participant.name}
+                                    onChange={handleChange}
+                                    value = {participant.fullName}
                                 />
                             </p>
                             <p>
@@ -97,8 +96,8 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     placeholder="contacto@dominio.com*"
-                                    onChange={handleInputChange}
-                                    event={participant.email}
+                                    onChange={handleChange}
+                                    value={participant.email}
 
                                 />
                             </p>{" "}
@@ -111,18 +110,18 @@ const Contact = () => {
                                     cols="10"
                                     rows="10"
                                     placeholder="Messages"
-                                    onChange={handleInputChange}
+                                    onChange={handleChange}
                                     value = {participant.message}
 
                                 ></textarea>{" "}
                             </p>
                             <p>
                                 <a href="/services">
-                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setDisabled(!disabled)}  />
+                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setAcepted(!acepted)}  />
                                     <label> Acepto Terminos & Condiciones </label></a>
                             </p>
                             <p>
-                                <button onClick={() => mostrarAlert()} disabled={disabled}>
+                                <button onClick={() => mostrarAlert()} disabled={disabled || acepted}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
@@ -130,8 +129,6 @@ const Contact = () => {
 
                     </Col>
                 </Row>
-
-
 
                 <br />
             </Container>
