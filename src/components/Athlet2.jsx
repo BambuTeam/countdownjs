@@ -9,11 +9,11 @@ const Athlet2 = () => {
         <div className="bg-dark-1 ">
             <Container className="athlet-bg">
                 <Row >
-                    <Col className="col-4">
+                    <Col className="col-md-4 col-sm-12 col-xs-12">
 
                         <img src={Runners} alt="csarmiento" />
                     </Col>
-                    <Col className="col-8">
+                    <Col className="col-md-8 col-sm-12 col-xs-12">
                         <h2>CAMP DIRECTOR</h2>
                         <h3>NICK MOORE</h3>
                         <p>Nick “The Preacher” Moore is a native of Boise, Idaho, USA. Some of his highlights include:</p>
