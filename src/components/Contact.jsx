@@ -4,16 +4,21 @@ import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
 
+const INITIAL_STATE = {
+    nombre: "",
+    correo:"",
+    mensaje:""
+}
+
 
 const Contact = () => {
-    const [participant, setParticipant] = useState({
-        nombre: '',
-        correo:'',
-        mensaje:''
-    })
-    
+    const [participant, setParticipant] = useState(INITIAL_STATE)
     const [disabled, setDisabled] = useState(true)
     const [dataform, setDataform] = useState(false)
+
+    const handlesubmit = ()=>{
+
+    }
 
     useEffect(()=>{
         const isValid = false 
@@ -82,6 +87,7 @@ const Contact = () => {
                                     id="name"
                                     placeholder="Nombre Completo*"
                                     onChange={handleInputChange}
+                                    value = {participant.name}
                                 />
                             </p>
                             <p>
@@ -93,6 +99,7 @@ const Contact = () => {
                                     id="email"
                                     placeholder="contacto@dominio.com*"
                                     onChange={handleInputChange}
+                                    event={participant.email}
 
                                 />
                             </p>{" "}
@@ -106,6 +113,7 @@ const Contact = () => {
                                     rows="10"
                                     placeholder="Messages"
                                     onChange={handleInputChange}
+                                    value = {participant.message}
 
                                 ></textarea>{" "}
                             </p>
