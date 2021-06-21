@@ -14,6 +14,7 @@ const Contact = () => {
         message:""
     })
     const [disabled, setDisabled] = useState(true)
+    const [acepted, setAcepted] = useState(true)
     
     
 
@@ -116,11 +117,11 @@ const Contact = () => {
                             </p>
                             <p>
                                 <a href="/services">
-                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setDisabled(!disabled)}  />
+                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setAcepted(!acepted)}  />
                                     <label> Acepto Terminos & Condiciones </label></a>
                             </p>
                             <p>
-                                <button onClick={() => mostrarAlert()} disabled={disabled}>
+                                <button onClick={() => mostrarAlert()} disabled={disabled || acepted}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
