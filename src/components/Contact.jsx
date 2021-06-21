@@ -66,7 +66,7 @@ const Contact = () => {
                     <div className="line"></div>
                     <Col className="col-md-3">
                     </Col>
-                    <Col className="col-md-6 col-sm-12 col-xs-12">
+                    <Col className="col-md-6">
                         <h2>
                             CONTACT
                         </h2>
