@@ -9,32 +9,32 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
     const [participant, setParticipant] = useState({
-        fullName:"",
-        email:"",
-        message:""
+        fullName: "",
+        email: "",
+        message: ""
     })
     const [disabled, setDisabled] = useState(true)
     const [acepted, setAcepted] = useState(true)
-    
-    
 
 
-    useEffect(()=>{
+
+
+    useEffect(() => {
         /// este use efect se asegura que los datos del participante no esten en blanco 
-        const isParticipant  = Object.values(participant).every(el=>Boolean(el))
-        isParticipant ? setDisabled(false):setDisabled(true);
-    },[participant])
-    
+        const isParticipant = Object.values(participant).every(el => Boolean(el))
+        isParticipant ? setDisabled(false) : setDisabled(true);
+    }, [participant])
 
-    function handleChange(event){
+
+    function handleChange(event) {
         //este se asegura de ver los cambios de los campos y asignar los valores 
         //se pueden agregar validaciones por aqui cambios
-        const {name, value} = event.target;
+        const { name, value } = event.target;
 
-        setParticipant((prevState)=>({...prevState, [name]: value}))// se maneja el cambio de la variable dentro del set 
+        setParticipant((prevState) => ({ ...prevState, [name]: value }))// se maneja el cambio de la variable dentro del set 
     }
 
-    
+
 
 
     function sendEmail(e) {
@@ -64,9 +64,9 @@ const Contact = () => {
             <Container className="Contact">
                 <Row >
                     <div className="line"></div>
-                    <Col className="col-3">
+                    <Col className="col-md-3">
                     </Col>
-                    <Col className="col-6">
+                    <Col className="col-md-6 col-sm-12 col-xs-12">
                         <h2>
                             CONTACT
                         </h2>
@@ -85,7 +85,7 @@ const Contact = () => {
                                     id="fullName"
                                     placeholder="Nombre Completo*"
                                     onChange={handleChange}
-                                    value = {participant.fullName}
+                                    value={participant.fullName}
                                 />
                             </p>
                             <p>
@@ -111,13 +111,13 @@ const Contact = () => {
                                     rows="10"
                                     placeholder="Messages"
                                     onChange={handleChange}
-                                    value = {participant.message}
+                                    value={participant.message}
 
                                 ></textarea>{" "}
                             </p>
                             <p>
                                 <a href="/services">
-                                    <input className="checkbox" required="required" type="checkbox" onClick={()=>setAcepted(!acepted)}  />
+                                    <input className="checkbox" required="required" type="checkbox" onClick={() => setAcepted(!acepted)} />
                                     <label> Acepto Terminos & Condiciones </label></a>
                             </p>
                             <p>
@@ -127,6 +127,8 @@ const Contact = () => {
                             </p>
                         </form>
 
+                    </Col>
+                    <Col className="col-md-3">
                     </Col>
                 </Row>
 
