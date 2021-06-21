@@ -4,15 +4,15 @@ import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
 
-const INITIAL_STATE = {
-    name: "",
-    email:"",
-    message:""
-}
+
 
 
 const Contact = () => {
-    const [participant, setParticipant] = useState(INITIAL_STATE)
+    const [participant, setParticipant] = useState({
+        fullName:"",
+        email:"",
+        message:""
+    })
     const [disabled, setDisabled] = useState(true)
     
     
@@ -22,15 +22,14 @@ const Contact = () => {
         /// este use efect se asegura que los datos del participante no esten en blanco 
         const isParticipant  = Object.values(participant).every(el=>Boolean(el))
         isParticipant ? setDisabled(false):setDisabled(true);
-
-
     },[participant])
     
 
-    const handleChange = (event) => {
+    function handleChange(event){
         //este se asegura de ver los cambios de los campos y asignar los valores 
         //se pueden agregar validaciones por aqui cambios
-        const [name, value] = event.target
+        const {name, value} = event.target;
+
         setParticipant((prevState)=>({...prevState, [name]: value}))// se maneja el cambio de la variable dentro del set 
     }
 
@@ -47,7 +46,6 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset();
-        setParticipant=INITIAL_STATE
     }
     const mostrarAlert = () => {
 
@@ -81,12 +79,12 @@ const Contact = () => {
                                 <label> Name  *</label>
                                 <input
                                     required="required"
-                                    name="name"
+                                    name="fullName"
                                     type="text"
-                                    id="name"
+                                    id="fullName"
                                     placeholder="Nombre Completo*"
                                     onChange={handleChange}
-                                    value = {participant.name}
+                                    value = {participant.fullName}
                                 />
                             </p>
                             <p>
@@ -98,7 +96,7 @@ const Contact = () => {
                                     id="email"
                                     placeholder="contacto@dominio.com*"
                                     onChange={handleChange}
-                                    event={participant.email}
+                                    value={participant.email}
 
                                 />
                             </p>{" "}
@@ -130,8 +128,6 @@ const Contact = () => {
 
                     </Col>
                 </Row>
-
-
 
                 <br />
             </Container>
