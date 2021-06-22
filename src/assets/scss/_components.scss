@@ -277,3 +277,41 @@
     color: red;
     font-weight: bold;
 }
+
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser{
+   
+    background-color: #030303 !important;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    height: 500px !important;
+
+    h1{
+        color: #fefefe;
+    }
+
+    h3{
+        color: #fefefe;
+    }
+
+    h4{
+        color: #fefefe;
+    }
+
+    h5{
+        color: #fefefe;
+    }
+
+
+
+
+    
+    p{
+        color: #fefefe;
+    }
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .ec-footer{
+    display: none !important;
+}

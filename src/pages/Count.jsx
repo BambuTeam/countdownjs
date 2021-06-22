@@ -10,6 +10,7 @@ import Athlet2 from "../components/Athlet2";
 import Sponsor from "../components/Sponsor";
 import Buyticket2 from "../components/Buyticket2";
 import Contact from "../components/Contact";
+import Ticketsale from "../components/Ticketsale";
 
 
 const Layout = () => {
@@ -26,6 +27,7 @@ const Layout = () => {
         <Sponsor />
         <Buyticket2 />
         <Contact />
+        <Ticketsale />
     </div>)
 }
 
