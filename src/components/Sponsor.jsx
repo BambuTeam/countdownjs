@@ -12,6 +12,11 @@ import sponsor8 from "../img/sponsor/Gatorade.svg"
 import sponsor9 from "../img/sponsor/oceana.svg"
 import sponsor10 from "../img/sponsor/bambu.svg"
 import sponsor11 from "../img/sponsor/hyperice.svg"
+import sponsor12 from "../img/sponsor/coros.svg"
+import sponsor13 from "../img/sponsor/normatec.svg"
+
+
+
 
 
 
@@ -78,6 +83,22 @@ const Sponsor = () => {
                     </Col>
                 </Row>
                 <br />
+                <Row>
+                <Col className="col-2"></Col>
+                <Col className="col-2"></Col>
+
+                <Col className="col-2">
+                        <a href="https://clarosports.claro.com.gt/home/" target="_blank">
+                            <img src={sponsor12} alt="csarmiento" /></a>
+                    </Col>
+                    <Col className="col-2">
+                        <a href="https://clarosports.claro.com.gt/home/" target="_blank">
+                            <img src={sponsor13} alt="csarmiento" /></a>
+                    </Col>
+                <Col className="col-2"></Col>
+                <Col className="col-2"></Col>
+
+                </Row>
             </Container>
         </div>
     )

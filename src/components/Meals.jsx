@@ -26,10 +26,10 @@ const Meals = () => {
                         <p>You will be able to take part in one of the most exclusive Training Camps in the region, with some of the world’s Top Athletes.</p>
                         <p>You will have the unique opportunity to participate in four Master Classes given by the Athletes: </p>
                         <br />
-                        <p>- Nutrition:  Manu Vilaseca
-                            <br />- Mental Strategy, Toughness and Training. Coree Woltering 
-                            <br /> - Speed work & Training: Michael Wardia 
-                            <br /> - Gear & Night Running: Rosalia Camargo</p>
+                        <p>- Nutrition:  <span className="col-red">Manu Vilaseca</span>
+                            <br />- Mental Strategy, Toughness and Training: <span className="col-red">Coree Woltering</span> 
+                            <br /> - Speed work & Training: <span className="col-red">Michael Wardia </span> 
+                            <br /> - Gear & Night Running: <span className="col-red">Rosalia Camargo</span> </p>
                         <a href="https://www.google.com/" target="_blank">
                             <button> More Info</button>
                         </a>
