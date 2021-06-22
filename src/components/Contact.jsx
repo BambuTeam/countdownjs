@@ -132,8 +132,6 @@ const Contact = () => {
                     <Col className="col-md-3">
                     </Col>
                 </Row>
-
-                <br />
             </Container>
         </div >
     );
