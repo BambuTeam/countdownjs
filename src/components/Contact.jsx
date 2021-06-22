@@ -64,6 +64,7 @@ const Contact = () => {
             <Container className="Contact">
                 <Row >
                     <div className="line"></div>
+                    <br/>
                     <Col className="col-md-3">
                     </Col>
                     <Col className="col-md-6">

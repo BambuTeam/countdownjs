@@ -27,12 +27,9 @@ const Meals = () => {
                         <p>You will have the unique opportunity to participate in four Master Classes given by the Athletes: </p>
                         <br />
                         <p>- Nutrition:  Manu Vilaseca
-                            <br />- Mental Strategy, Toughness and Training. Coree </p>
-                        <h3>Woltering </h3>
-                        <p>- Speed work & Training: Michael Wardian <br />
-                            - Gear & Night Running: Rosalia Camargo
-                        </p>
-
+                            <br />- Mental Strategy, Toughness and Training. Coree Woltering 
+                            <br /> - Speed work & Training: Michael Wardia 
+                            <br /> - Gear & Night Running: Rosalia Camargo</p>
                         <a href="https://www.google.com/" target="_blank">
                             <button> More Info</button>
                         </a>

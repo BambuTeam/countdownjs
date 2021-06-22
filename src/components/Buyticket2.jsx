@@ -12,16 +12,16 @@ const Buyticket2=()=>(
         <Col className="col-3">
         
         </Col>
-        <Col className="col-2">
+        <Col className="col-2 logo-vertikality">
         <img src={logo1} alt="csarmiento" />
         </Col>
-        <Col className="col-1">
+        <Col className="col-1 txt-by">
                 <h1>BY</h1>
         </Col>
-        <Col className="col-1">
+        <Col className="col-1 logo-vertikal">
         <img src={logo2} alt="csarmiento" />
         </Col>
-        <Col className="col-4">
+        <Col className="col-5">
             <br />
             <a href="https://www.google.com/" target="_blank">
             <button>BUY TICKET</button>

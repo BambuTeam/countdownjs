@@ -11,6 +11,8 @@ import sponsor7 from "../img/sponsor/inguat.svg"
 import sponsor8 from "../img/sponsor/Gatorade.svg"
 import sponsor9 from "../img/sponsor/oceana.svg"
 import sponsor10 from "../img/sponsor/bambu.svg"
+import sponsor11 from "../img/sponsor/hyperice.svg"
+
 
 
 
@@ -24,7 +26,7 @@ const Sponsor = () => {
                 <div className="line"></div>
                 {/* PRIMERA FILA */}
                 <Row >
-                    <Col className="col-2">
+                    <Col className="col-1">
                     </Col>
                     <Col className="col-2">
                         <a href="http://excelautomotriz.com/guatemala/" target="_blank">
@@ -43,6 +45,8 @@ const Sponsor = () => {
                             <img src={sponsor4} alt="csarmiento" /></a>
                     </Col>
                     <Col className="col-2">
+                    <a href="https://hyperice.com/" target="_blank">
+                            <img src={sponsor11} alt="csarmiento" /></a>
                     </Col>
                 </Row>
 
