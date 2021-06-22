@@ -16,18 +16,18 @@ import Contact from "../components/Contact";
 const Layout = () => {
     return (<div>
 
-        < Navbar />
-        < Header />
-        < Buyticket />
-        < Location />
+        <Navbar />
+        <Header />
+        <Buyticket />
+        <Location />
         <Meals />
         <Vision />
         <Athlet1 />
         <Athlet2 />
         <Sponsor />
+        <Contact />
         <Buyticket2 />
         <Ticketsale />
-        <Contact />
     </div>)
 }
 

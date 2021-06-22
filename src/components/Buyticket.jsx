@@ -18,7 +18,7 @@ const Buyticket=()=>(
       <Col>
   
       <br />
-      <a href="https://www.google.com/" target="_blank">
+      <a href="#my-store-41978105">
       <button>BUY TICKET</button>
       </a>
       </Col>
