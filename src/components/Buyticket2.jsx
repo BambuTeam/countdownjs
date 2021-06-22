@@ -23,7 +23,7 @@ const Buyticket2=()=>(
         </Col>
         <Col className="col-5">
             <br />
-            <a href="https://www.google.com/" target="_blank">
+            <a href="https://zerosixty.co/store/VERTIKALITY-EVENT-p368643735" target="_blank">
             <button>BUY TICKET</button>
             </a>
         </Col>
