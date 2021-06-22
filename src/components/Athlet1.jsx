@@ -5,17 +5,17 @@ import Runners from "../img/runners/csarmiento.png"
 
 const Athlet1 = () => {
     return (
-        
+
         <div className="bg-dark-1 ">
-        <br />
+            <br />
             <Container className="athlet-bg">
                 <Row >
 
-                    <Col className="col-4">
+                    <Col className="col-md-4 col-sm-12 col-xs-12 ">
 
                         <img src={Runners} alt="csarmiento" />
                     </Col>
-                    <Col className="col-8 cont-text_athlet">
+                    <Col className="col-md-8 col-sm-12 col-xs-12 ">
                         <h2>FOUNDER VERTIKALITY</h2>
                         <h3>CHARLIE SARMIENTO</h3>
                         <p>Founder & Business Strategy Director</p>
