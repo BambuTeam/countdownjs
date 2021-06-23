@@ -67,7 +67,7 @@ const Contact = () => {
                     <br/>
                     <Col className="col-md-3">
                     </Col>
-                    <Col className="col-md-6">
+                    <div className="col-md-6 col-sm-12">
                         <h2>
                             CONTACT
                         </h2>
@@ -119,16 +119,16 @@ const Contact = () => {
                             <p>
                                 <a href="/services">
                                     <input className="checkbox" required="required" type="checkbox" onClick={() => setAcepted(!acepted)} />
-                                    <label> Acepto Terminos & Condiciones </label></a>
+                                    <label style={{color:'#fff'}}> Acepto Terminos & Condiciones </label></a>
                             </p>
                             <p>
-                                <button onClick={() => mostrarAlert()} disabled={disabled || acepted}>
+                                <button onClick={() => mostrarAlert()} disabled={disabled || acepted} className="text-center" style={{margin:'auto'}}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
                         </form>
 
-                    </Col>
+                    </div>
                     <Col className="col-md-3">
                     </Col>
                 </Row>
