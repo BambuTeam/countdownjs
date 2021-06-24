@@ -47,9 +47,9 @@ const Terminos = () => {
                             BY CHECKING THE BOX BELOW, I HEREBY AFFIRMATIVELY ACKNOWLEDGE THAT I HAVE READ AND UNDERSTAND THE FOREGOING AND I AGREE TO BE BOUND BY ALL TERMS OF THIS WAIVER AND RELEASE OF LIABILITY. I AGREE THAT THE COMPANY MAY RELY ON MY AGREEMENT TO THIS WAIVER AND RELEASE OF LIABILITY AS A MATERIAL INDUCEMENT TO ALLOW ME TO PARTICIPATE IN THE EVENT(S).
                         </p>
                         <p>
-                            <a to="/">
+                            <a href="/#Sponsor">
                                 <button>
-                                    ACEPTAR{" "}
+                                    ACEPTAR
                                 </button>
                             </a>
                         </p>

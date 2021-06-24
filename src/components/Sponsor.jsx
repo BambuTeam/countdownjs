@@ -26,7 +26,7 @@ const Sponsor = () => {
 
     return (
 
-        <div className="bg-dark-1 ">
+        <div className="bg-dark-1" id="Sponsor">
             <Container className="sponsor-bg">
                 <div className="line"></div>
                 {/* PRIMERA FILA */}
