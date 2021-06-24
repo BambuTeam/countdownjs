@@ -84,19 +84,14 @@ const Sponsor = () => {
                 </Row>
                 <br />
                 <Row>
-                <Col className="col-2"></Col>
-                <Col className="col-2"></Col>
+                
 
                 <Col className="col-2">
                         <a href="https://www.coros.com/" target="_blank">
                             <img src={sponsor12} alt="csarmiento" /></a>
                     </Col>
-                    <Col className="col-2">
-                        <a href="https://hyperice.com/normatec" target="_blank">
-                            <img src={sponsor13} alt="csarmiento" /></a>
-                    </Col>
                 <Col className="col-2"></Col>
-                <Col className="col-2"></Col>
+               
 
                 </Row>
             </Container>
