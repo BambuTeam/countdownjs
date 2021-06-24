@@ -19,7 +19,7 @@ const Meals = () => {
                             Dinner available for purchase.
                         </p>
                         <h3> Welcome Kit</h3>
-                        <p>Unique T-Shirt Vertikality, Cool Cap, “Train for the Shake” Blender Bottle, Gatorade Hydration bottle  and other surprises..</p>
+                        <p>Unique T-Shirt Vertikality, Cool Cap, “Train for the Shake” Blender Bottle, Gatorade Hydration bottle  and other surprises.</p>
 
                         <h3>Master Classes/Trail Runs</h3>
 
@@ -28,7 +28,7 @@ const Meals = () => {
                         <br />
                         <p>- Nutrition:  <span className="col-red">Manu Vilaseca</span>
                             <br />- Mental Strategy, Toughness and Training: <span className="col-red">Coree Woltering</span> 
-                            <br /> - Speed work & Training: <span className="col-red">Michael Wardia </span> 
+                            <br /> - Speed work & Training: <span className="col-red">Michael Wardian </span> 
                             <br /> - Gear & Night Running: <span className="col-red">Rosalia Camargo</span> </p>
                         <a href="https://www.google.com/" target="_blank">
                             <button> More Info</button>

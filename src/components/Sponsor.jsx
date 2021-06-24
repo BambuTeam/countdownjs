@@ -31,8 +31,7 @@ const Sponsor = () => {
                 <div className="line"></div>
                 {/* PRIMERA FILA */}
                 <Row >
-                    <Col className="col-1">
-                    </Col>
+                   
                     <Col className="col-2">
                         <a href="http://excelautomotriz.com/guatemala/" target="_blank">
                             <img src={sponsor1} alt="csarmiento" /></a>
@@ -52,6 +51,10 @@ const Sponsor = () => {
                     <Col className="col-2">
                     <a href="https://hyperice.com/" target="_blank">
                             <img src={sponsor11} alt="csarmiento" /></a>
+                    </Col>
+                    <Col className="col-2">
+                        <a href="https://www.coros.com/" target="_blank">
+                            <img src={sponsor12} alt="csarmiento" /></a>
                     </Col>
                 </Row>
 
@@ -83,17 +86,7 @@ const Sponsor = () => {
                     </Col>
                 </Row>
                 <br />
-                <Row>
                 
-
-                <Col className="col-2">
-                        <a href="https://www.coros.com/" target="_blank">
-                            <img src={sponsor12} alt="csarmiento" /></a>
-                    </Col>
-                <Col className="col-2"></Col>
-               
-
-                </Row>
             </Container>
         </div>
     )
