@@ -61,7 +61,7 @@ const Contact = () => {
     return (
 
         <div className="bg-dark-1 ">
-            <Container className="Contact">
+            <Container className="Contact" id="Contact">
                 <Row >
                     <div className="line"></div>
                     <br/>

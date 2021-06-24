@@ -5,7 +5,7 @@ import logo2 from "../img/log_vertikal.svg"
 
 const Buyticket2=()=>(
 
-  <div className="bg-dark-1">
+  <div className="bg-dark-1" id="BuyTicket2">
   <Container className="Buytickets2">
   <div className="line"></div>
       <Row>    
