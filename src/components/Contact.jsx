@@ -51,8 +51,7 @@ const Contact = () => {
     const mostrarAlert = () => {
 
         swal({
-            title: "Gracias por realizar tu contancto",
-            text: "Pronto se estaran comunicando contigo, somos Vertikality",
+            title: "Thank You",
             icon: "success",
             timer: 4000
         });
