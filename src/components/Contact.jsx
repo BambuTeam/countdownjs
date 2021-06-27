@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
+import Modal from '../components/Modal'
+import Terminos from '../pages/Terminos'
 import { Link } from "react-router-dom";
 
 
 
 
 const Contact = () => {
+    const [modal, setModal] = useState(false)
     const [participant, setParticipant] = useState({
         fullName: "",
         email: "",
@@ -84,7 +87,7 @@ const Contact = () => {
                                     name="fullName"
                                     type="text"
                                     id="fullName"
-                                    placeholder="Nombre Completo*"
+                                    placeholder="Full Name*"
                                     onChange={handleChange}
                                     value={participant.fullName}
                                 />
@@ -96,7 +99,7 @@ const Contact = () => {
                                     name="email"
                                     type="email"
                                     id="email"
-                                    placeholder="contacto@dominio.com*"
+                                    placeholder="email address*"
                                     onChange={handleChange}
                                     value={participant.email}
 
@@ -110,23 +113,29 @@ const Contact = () => {
                                     id="message"
                                     cols="10"
                                     rows="10"
-                                    placeholder="Messages"
+                                    placeholder="Message"
                                     onChange={handleChange}
                                     value={participant.message}
 
                                 ></textarea>{" "}
                             </p>
                             <p>
-                                <a href="/services">
+                                <a onClick={()=>setModal(true)}>
                                     <input className="checkbox" required="required" type="checkbox" onClick={() => setAcepted(!acepted)} />
-                                    <label style={{color:'#fff'}}> Acepto Terminos & Condiciones </label></a>
-                            </p>
-                            <p>
+                                    <label style={{color:'#fff'}}> I Agree to Terms and Conditions</label></a>
                                 <button onClick={() => mostrarAlert()} disabled={disabled || acepted} className="text-center" style={{margin:'auto'}}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
                         </form>
+                        {/* modal inicion */}
+                        <Modal onClose={()=>setModal(false)} show={modal}/>
+
+
+
+
+
+                        
 
                     </div>
                     <Col className="col-md-3">

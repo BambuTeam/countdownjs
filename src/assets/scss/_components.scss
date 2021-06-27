@@ -309,6 +309,32 @@ html#ecwid_html body#ecwid_body div.ecwid-productBrowser{
     }
 }
 
+
+.modal-terms {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    align-items: center;
+    color: #030303;
+    justify-content:center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999999;
+    overflow-y: auto;
+    height: 100%;
+
+  }
+ 
+  .modal-body > p{
+      color: #000!important;
+  }
+
+  
+  
+
 html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .ec-footer{
     display: none !important;
 }
