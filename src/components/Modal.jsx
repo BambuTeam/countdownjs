@@ -41,9 +41,9 @@ const Modal = props => {
         <div className="modal-terms" onClick={props.onClose}>
             <div className="modal-content" onClick={e=>e.stopPropagation()} >
                 <div className="modal-header">
-                    <h4 className="modal-title">
-                        Terminos y Condiciones
-                    </h4>
+                    <h1 className="modal-title">
+                    Terms and Conditions
+                    </h1>
                 </div>
                 <div className="modal-body">
                   

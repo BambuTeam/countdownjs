@@ -87,7 +87,7 @@ const Contact = () => {
                                     name="fullName"
                                     type="text"
                                     id="fullName"
-                                    placeholder="Nombre Completo*"
+                                    placeholder="Full Name*"
                                     onChange={handleChange}
                                     value={participant.fullName}
                                 />
@@ -99,7 +99,7 @@ const Contact = () => {
                                     name="email"
                                     type="email"
                                     id="email"
-                                    placeholder="contacto@dominio.com*"
+                                    placeholder="email address*"
                                     onChange={handleChange}
                                     value={participant.email}
 
@@ -113,7 +113,7 @@ const Contact = () => {
                                     id="message"
                                     cols="10"
                                     rows="10"
-                                    placeholder="Messages"
+                                    placeholder="Message"
                                     onChange={handleChange}
                                     value={participant.message}
 
@@ -122,7 +122,7 @@ const Contact = () => {
                             <p>
                                 <a onClick={()=>setModal(true)}>
                                     <input className="checkbox" required="required" type="checkbox" onClick={() => setAcepted(!acepted)} />
-                                    <label style={{color:'#fff'}}> Acepto Terminos & Condiciones </label></a>
+                                    <label style={{color:'#fff'}}> I Agree to Terms and Conditions</label></a>
                                 <button onClick={() => mostrarAlert()} disabled={disabled || acepted} className="text-center" style={{margin:'auto'}}>
                                     ENVIAR{" "}
                                 </button>
