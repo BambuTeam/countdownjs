@@ -31,7 +31,7 @@ const Meals = () => {
                             <br /> - Speed work & Training: <span className="col-red">Michael Wardian </span> 
                             <br /> - Gear & Night Running: <span className="col-red">Rosalia Camargo</span> </p>
                         <a href="https://www.google.com/" target="_blank">
-                            <button> More Info</button>
+                            <a href="#Contact"><button> More Info</button></a>
                         </a>
                     </Col>
                 </Row>
