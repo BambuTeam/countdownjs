@@ -130,6 +130,11 @@ const Contact = () => {
                         </form>
                         {/* modal inicion */}
                         <Modal onClose={()=>setModal(false)} show={modal}/>
+
+
+
+
+
                         
 
                     </div>

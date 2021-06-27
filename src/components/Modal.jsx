@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react'
+import Terminos from '../pages/Terminos'
 
 
 
@@ -45,7 +46,10 @@ const Modal = props => {
                     </h4>
                 </div>
                 <div className="modal-body">
-                    this is modal content 
+                  
+                   <Terminos/>
+                  
+                      
                 </div>
                 <div className="modal-footer">
                     <button className="button" onClick={props.onClose}>
