@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState} from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
+import Modal from '../components/Modal'
+import Terminos from '../pages/Terminos'
 import { Link } from "react-router-dom";
 
 
 const Contact = () => {
+    const [modal, setModal] = useState(false)
+
 
     function sendEmail(e) {
         e.preventDefault();
@@ -75,15 +79,20 @@ const Contact = () => {
                                 ></textarea>{" "}
                             </p>
                             <p>
-                                <a href="/services">
-                                    <label> Acepto Terminos & Condiciones </label>{" "}</a>
-                                <input type="checkbox" />
+                            <input type="checkbox" />
 
+                                <a onClick={()=>setModal(true)}>
+                                    <label> Acepto Terminos & Condiciones </label>{" "}
+                                </a>
+                                
                                 <button onClick={() => mostrarAlert()}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
                         </form>
+                        {/* modal inicion */}
+                        <Modal onClose={()=>setModal(false)} show={modal}/>
+                        
 
                     </Col>
                 </Row>
