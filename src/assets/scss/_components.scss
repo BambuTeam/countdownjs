@@ -3,7 +3,8 @@
     p{
         
         color: #fff;
-        font-size: 24px;
+        font-size: 18px;
+        line-height : 20px;
     }
     h2{
         margin-top: 40px;
@@ -40,11 +41,13 @@
         width: 100%;
     }
     p{
+        line-height: 25px;
         margin-top: 40px;
         color: #fff;
         font-size: 24px;
     }
     h1{
+        line-height: 115px !important;
         margin-left: 40px;
         margin-top: 40px;
         color: #fff;
@@ -61,9 +64,13 @@
         
         color: #fff;
         font-size: 17px;
-        font-weight: 200;
+        font-weight: 500;
+        line-height: 17px;
+        
+
     }
     h2{
+        line-height: 15px;
         transform: skew(-15deg);
         margin-top: 20px;
         color: #fff;
@@ -111,6 +118,8 @@
     font-style: italic;
     text-align: center;
     display:block;
+    width: 250px;
+    margin-right: -40px;
 
     &:hover {
     animation: mymove 5s infinite;
@@ -139,7 +148,28 @@
         font-size: 20px;
         font-weight: 700;
     }
+
+
+    
 }
+
+.logo-vertikality img{
+ width: 170%;
+ margin-left: -100px;
+ margin-bottom: 52px;
+
+ 
+}
+
+.txt-by h1{
+    font-size: 40px;
+}
+
+.logo-vertikal img{
+    width: 150%;
+    margin-left: -40px;
+    margin-top: 15px;
+   }
 
 .Contact{
     button{
@@ -200,6 +230,10 @@
     text-align: center;
     width: 70%;
     }
+    .checkbox{
+        margin-left: 0px;
+        width: 20%;
+    }
     textarea{
     width: 70%;
     letter-spacing: 3px;
@@ -214,17 +248,65 @@
 .Terminos{
     
     p{
-        font-family: Font-Bold ;
+        margin-top: 100px;
+        font-family: Font-Italic;
         font-style: italic;
         color: #fff;
         font-size: 16px;
         text-align: justify;
     }
-    input{
-    margin-left: 30px;
+    button{
     letter-spacing: 3px;
+    transform: skew(-10deg);
+    font-size: 35px;
+    background-color: red;
+    color: #fefefe;
+    font-family: Font-Bold ;
+    font-style: italic;
+    text-align: center;
+    display:block;
+
+    &:hover {
+    animation: mymove 5s infinite;
+    letter-spacing: 5px;
     }
+    }
+}
+
+.col-red{
+    color: red;
+    font-weight: bold;
+}
+
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser{
    
+    background-color: #030303 !important;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    height: 500px !important;
+
+    h1{
+        color: #fefefe !important;
+    }
+
+    h3{
+        color: #fefefe !important;
+    }
+
+    h4{
+        color: #fefefe !important;
+    }
+
+    h5{
+        color: #fefefe !important;
+    }
+
+    
+    p{
+        color: #fefefe !important;
+    }
 }
 
 
@@ -243,3 +325,66 @@
   }
   
   
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .ec-footer{
+    display: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .product-details--layout-columns-three.product-details--layout-sidebar-right .product-details__description .product-details__product-title, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .product-details--layout-columns-three.product-details--layout-sidebar-right .product-details__description .ec-breadcrumbs{
+    color: #fefefe !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .product-details__description .product-details__general-info .product-details-module__title{
+    color: #fefefe !important;
+    
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .details-product-price__value{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store {
+    color: #fefefe !important;
+
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .details-product-purchase .details-product-purchase__in-stock-qty{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--animated.form-control--done .form-control__button-text, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--animated.form-control--done .form-control__button-svg{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-likely__button{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .form-control--large .form-control__text, html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .form-control--large .form-control__prefix, html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .form-control--large .form-control__suffix{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .ec-cart__cert{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-text-muted{
+    color: antiquewhite !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select{
+    color: #fefefe !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-store .form-control__text{
+    color: #fefefe !important;
+
+}

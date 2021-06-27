@@ -2,12 +2,14 @@ import './App.css';
 import Countdown from './pages/Count.jsx';
 import './assets/scss/style.scss';
 import Terminos from './pages/Terminos.jsx';
+import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Switch>
         <Route exact path="/" component={Countdown} />
         <Route exact path="/services" component={Terminos} />

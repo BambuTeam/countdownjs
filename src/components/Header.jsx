@@ -9,7 +9,7 @@ const Header=()=>(
   <Container>
     <Row>
       <br />
-    <p className="col-12 txt-runner">The most exclusive Training Camps & Race <br /> Series events in the region, alongside some of <br /> the world top athletes.</p>
+    <p className="col-12 txt-runner">The most exclusive Training Camps & Race <br /> Series events in the region, alongside some of <br /> the  world´s top athletes.</p>
     </Row>
     
   <Row>

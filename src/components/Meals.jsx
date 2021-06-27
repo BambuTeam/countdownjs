@@ -3,40 +3,43 @@ import { Col, Container, Row } from 'react-bootstrap';
 import LogoSvg from "../img/hotel.jpeg"
 
 
-const Meals =()=>{
-    return(
-        
-        <div className="bg-dark-1 ">     
+const Meals = () => {
+    return (
+
+        <div className="bg-dark-1 ">
             <Container className="meals-bg">
-            <Row >
-                <Col className="col-6">
-                    <br/>>
-                    <img src ={LogoSvg} alt="Logo Vertikality"/>
-                </Col>
-                <Col className="meals-bg col-6">
-                 <h2>Meals</h2>
-                <p>Breakfat and Lunch(Friday, Saturday & Sunday)</p>
-                     <h3> Welcome Kit</h3>  
-                    <p>T-Shirt Vertikality, Notebook, Propelling pencil,
-                        Cap, Blender Bottle.</p>
+                <Row >
+                    <Col className="meals-bg col-md-6 col-sm-12 col-xs-12">
+                        <br />
+                        <img src={LogoSvg} alt="Logo Vertikality" />
+                    </Col>
+                    <Col className="meals-bg col-md-6 col-sm-12 col-xs-12">
+                        <h2>Meals</h2>
+                        <p>Breakfast and Lunch included (Friday, Saturday & Sunday)
+                            Dinner available for purchase.
+                        </p>
+                        <h3> Welcome Kit</h3>
+                        <p>Unique T-Shirt Vertikality, Cool Cap, “Train for the Shake” Blender Bottle, Gatorade Hydration bottle  and other surprises.</p>
 
-                    <h3>Master Classes.</h3>
+                        <h3>Master Classes/Trail Runs</h3>
 
-                    <p>Atheletes will be able to take part of some of the
-                    most exclusive training camps in the country 
-                    alongside some of the Wordl's Top Athletes, where
-                    the will lear technique, mental training, and
-                    some of the secrets Elite Athletes do yo perform at 
-                    their best.</p>
-
-                    <a href="https://www.google.com/" target="_blank">
-                      <button> More Info</button>
-                     </a>
-                </Col>
+                        <p>You will be able to take part in one of the most exclusive Training Camps in the region, with some of the world’s Top Athletes.</p>
+                        <p>You will have the unique opportunity to participate in four Master Classes given by the Athletes: </p>
+                        <br />
+                        <p>- Nutrition:  <span className="col-red">Manu Vilaseca</span>
+                            <br />- Mental Strategy, Toughness and Training: <span className="col-red">Coree Woltering</span> 
+                            <br /> - Speed work & Training: <span className="col-red">Michael Wardian </span> 
+                            <br /> - Gear & Night Running: <span className="col-red">Rosalia Camargo</span> </p>
+                        <a href="https://www.google.com/" target="_blank">
+                            <button> More Info</button>
+                        </a>
+                    </Col>
                 </Row>
-                <br/>
+                <br />
+                <br />
+
             </Container>
         </div>
     )
-} 
+}
 export default Meals;

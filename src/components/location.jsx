@@ -12,11 +12,11 @@ const Location=()=>(
     
       <Row >
           <Col className="col-4">
-          <img src ={LogoCayetano} alt="Logo Vertikality"/>
+          <a href="https://sancayetano.gt/" target="_blank"><img src ={LogoCayetano} alt="Logo Vertikality"/></a>
           </Col>
           <Col className="col-8">
-          <p>LOCATION: Finca San Cayetano<br />
-                Km. 89.5 Ruta Nacional 14, San Juan Alotenango.</p>
+          <a href="https://sancayetano.gt/" target="_blank"><p>LOCATION: Finca San Cayetano<br />
+                Km. 89.5 Ruta Nacional 14, San Juan Alotenango.</p></a>
                 
           </Col>
       </Row>

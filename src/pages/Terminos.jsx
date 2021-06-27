@@ -1,5 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
+
 
 const Terminos = () => {
     return (
@@ -43,6 +45,13 @@ const Terminos = () => {
                             that they have read and agree to all terms on behalf of the participant.
 
                             BY CHECKING THE BOX BELOW, I HEREBY AFFIRMATIVELY ACKNOWLEDGE THAT I HAVE READ AND UNDERSTAND THE FOREGOING AND I AGREE TO BE BOUND BY ALL TERMS OF THIS WAIVER AND RELEASE OF LIABILITY. I AGREE THAT THE COMPANY MAY RELY ON MY AGREEMENT TO THIS WAIVER AND RELEASE OF LIABILITY AS A MATERIAL INDUCEMENT TO ALLOW ME TO PARTICIPATE IN THE EVENT(S).
+                        </p>
+                        <p>
+                            <a href="/#Sponsor">
+                                <button>
+                                    ACEPTAR
+                                </button>
+                            </a>
                         </p>
                     </Col>
                     <Col className="col-1">

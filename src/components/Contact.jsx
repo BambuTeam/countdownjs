@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
@@ -7,8 +7,37 @@ import Terminos from '../pages/Terminos'
 import { Link } from "react-router-dom";
 
 
+
+
 const Contact = () => {
     const [modal, setModal] = useState(false)
+    const [participant, setParticipant] = useState({
+        fullName: "",
+        email: "",
+        message: ""
+    })
+    const [disabled, setDisabled] = useState(true)
+    const [acepted, setAcepted] = useState(true)
+
+
+
+
+    useEffect(() => {
+        /// este use efect se asegura que los datos del participante no esten en blanco 
+        const isParticipant = Object.values(participant).every(el => Boolean(el))
+        isParticipant ? setDisabled(false) : setDisabled(true);
+    }, [participant])
+
+
+    function handleChange(event) {
+        //este se asegura de ver los cambios de los campos y asignar los valores 
+        //se pueden agregar validaciones por aqui cambios
+        const { name, value } = event.target;
+
+        setParticipant((prevState) => ({ ...prevState, [name]: value }))// se maneja el cambio de la variable dentro del set 
+    }
+
+
 
 
     function sendEmail(e) {
@@ -35,12 +64,13 @@ const Contact = () => {
     return (
 
         <div className="bg-dark-1 ">
-            <Container className="Contact">
+            <Container className="Contact" id="Contact">
                 <Row >
                     <div className="line"></div>
-                    <Col className="col-3">
+                    <br/>
+                    <Col className="col-md-3">
                     </Col>
-                    <Col className="col-6">
+                    <div className="col-md-6 col-sm-12">
                         <h2>
                             CONTACT
                         </h2>
@@ -53,39 +83,47 @@ const Contact = () => {
                             <p>
                                 <label> Name  *</label>
                                 <input
-                                    name="name"
+                                    required="required"
+                                    name="fullName"
                                     type="text"
-                                    id="name"
+                                    id="fullName"
                                     placeholder="Nombre Completo*"
+                                    onChange={handleChange}
+                                    value={participant.fullName}
                                 />
                             </p>
                             <p>
                                 <label> Email*</label>{" "}
                                 <input
+                                    required="required"
                                     name="email"
                                     type="email"
                                     id="email"
                                     placeholder="contacto@dominio.com*"
+                                    onChange={handleChange}
+                                    value={participant.email}
+
                                 />
                             </p>{" "}
                             <p>
                                 <label> Messages *      </label>{" "}
                                 <textarea
+                                    required="required"
                                     name="message"
                                     id="message"
                                     cols="10"
                                     rows="10"
                                     placeholder="Messages"
+                                    onChange={handleChange}
+                                    value={participant.message}
+
                                 ></textarea>{" "}
                             </p>
                             <p>
-                            <input type="checkbox" />
-
                                 <a onClick={()=>setModal(true)}>
-                                    <label> Acepto Terminos & Condiciones </label>{" "}
-                                </a>
-                                
-                                <button onClick={() => mostrarAlert()}>
+                                    <input className="checkbox" required="required" type="checkbox" onClick={() => setAcepted(!acepted)} />
+                                    <label style={{color:'#fff'}}> Acepto Terminos & Condiciones </label></a>
+                                <button onClick={() => mostrarAlert()} disabled={disabled || acepted} className="text-center" style={{margin:'auto'}}>
                                     ENVIAR{" "}
                                 </button>
                             </p>
@@ -94,12 +132,10 @@ const Contact = () => {
                         <Modal onClose={()=>setModal(false)} show={modal}/>
                         
 
+                    </div>
+                    <Col className="col-md-3">
                     </Col>
                 </Row>
-
-
-
-                <br />
             </Container>
         </div >
     );
