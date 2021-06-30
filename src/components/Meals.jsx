@@ -14,22 +14,21 @@ const Meals = () => {
                         <img src={LogoSvg} alt="Logo Vertikality" />
                     </Col>
                     <Col className="meals-bg col-md-6 col-sm-12 col-xs-12">
-                        <h2>Meals</h2>
-                        <p>Breakfast and Lunch included (Friday, Saturday & Sunday)
-                            Dinner available for purchase.
-                        </p>
-                        <h3> Welcome Kit</h3>
-                        <p>Unique T-Shirt Vertikality, Cool Cap, “Train for the Shake” Blender Bottle, Gatorade Hydration bottle  and other surprises.</p>
-
+                    <br />
                         <h3>Master Classes/Trail Runs</h3>
 
                         <p>You will be able to take part in one of the most exclusive Training Camps in the region, with some of the world’s Top Athletes.</p>
                         <p>You will have the unique opportunity to participate in four Master Classes given by the Athletes: </p>
-                        <br />
                         <p>- Nutrition:  <span className="col-red">Manu Vilaseca</span>
                             <br />- Mental Strategy, Toughness and Training: <span className="col-red">Coree Woltering</span> 
                             <br /> - Speed work & Training: <span className="col-red">Michael Wardian </span> 
                             <br /> - Gear & Night Running: <span className="col-red">Rosalia Camargo</span> </p>
+                        <h3> Welcome Kit</h3>
+                        <p>Unique T-Shirt Vertikality, Cool Cap, “Train for the Shake” Blender Bottle, Gatorade Hydration bottle  and other surprises.</p>
+                        <h2>Meals</h2>
+                        <p>Breakfast and Lunch included (Friday, Saturday & Sunday)
+                            Dinner available for purchase.
+                        </p>
                         <a href="https://www.google.com/" target="_blank">
                             <a href="#Contact"><button> More Info</button></a>
                         </a>
