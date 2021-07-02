@@ -30,7 +30,7 @@ const Meals = () => {
                             Dinner available for purchase.
                         </p>
                         <a href="https://www.google.com/" target="_blank">
-                            <a href="#Contact"><button> More Info</button></a>
+                            <a href="http://bambu-corp.com/s3/PVertikality.pdf" target="_blank"><button> More Info</button></a>
                         </a>
                     </Col>
                 </Row>

@@ -13,7 +13,7 @@ import sponsor9 from "../img/sponsor/oceana.svg"
 import sponsor10 from "../img/sponsor/bambu.svg"
 import sponsor11 from "../img/sponsor/hyperice.svg"
 import sponsor12 from "../img/sponsor/coros.svg"
-import sponsor13 from "../img/sponsor/normatec.svg"
+import sponsor13 from "../img/sponsor/adrenaline.svg"
 
 
 
@@ -85,7 +85,20 @@ const Sponsor = () => {
                             <img src={sponsor10} alt="csarmiento" /></a>
                     </Col>
                 </Row>
+                <Row>
+                    <Col></Col>
+                    <Col></Col>
+                    <Col className="col-2">
+                        <a href="https://www.instagram.com/adrenalinerushgt/" target="_blank">
+                            <img src={sponsor13} alt="csarmiento" /></a>
+                    </Col>
+                   
+                    <Col></Col>
+                    <Col></Col>
+
+                </Row>
                 <br />
+
                 
             </Container>
         </div>
