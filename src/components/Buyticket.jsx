@@ -18,7 +18,7 @@ const Buyticket=()=>(
       <Col>
   
       <br />
-      <a href="#my-store-41978105">
+      <a href="https://zerosixty.co/store/VERTIKALITY-EVENT-p368643735" target="_blank">
       <button>BUY TICKET</button>
       </a>
       </Col>
