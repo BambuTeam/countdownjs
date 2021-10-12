@@ -16,6 +16,7 @@ const Contact = () => {
         email: "",
         message: ""
     })
+    const favoritos = []
     const [disabled, setDisabled] = useState(true)
     const [acepted, setAcepted] = useState(true)
 
@@ -26,14 +27,14 @@ const Contact = () => {
         /// este use efect se asegura que los datos del participante no esten en blanco 
         const isParticipant = Object.values(participant).every(el => Boolean(el))
         isParticipant ? setDisabled(false) : setDisabled(true);
-    }, [participant])
+        
 
 
-    function handleChange(event) {
+    function handleChange(mifavorito) {
         //este se asegura de ver los cambios de los campos y asignar los valores 
         //se pueden agregar validaciones por aqui cambios
         const { name, value } = event.target;
-
+        favoritos.append(mifaborito)
         setParticipant((prevState) => ({ ...prevState, [name]: value }))// se maneja el cambio de la variable dentro del set 
     }
 
@@ -63,7 +64,7 @@ const Contact = () => {
     }
     return (
 
-        <div className="bg-dark-1 ">
+        <div className="bg-dark-1" >
             <Container className="Contact" id="Contact">
                 <Row >
                     <div className="line"></div>
@@ -129,7 +130,7 @@ const Contact = () => {
                             </p>
                         </form>
                         {/* modal inicion */}
-                        <Modal onClose={()=>setModal(false)} show={modal}/>
+                        <Modal onClose={()=>onAddFavorito(mifavorito)} show={modal}/>
 
 
 
